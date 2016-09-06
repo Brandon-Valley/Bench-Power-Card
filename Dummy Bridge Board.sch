@@ -8882,8 +8882,12 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="D5" library="FormE" deviceset="PMEG3030EP,115" device="" value="PMEG3030EP,115">
 <attribute name="PARTNO" value="PMEG3030EP,115"/>
 </part>
-<part name="B1" library="FormE" deviceset="CT2228" device="" value="BKCT2228-2-ND"/>
-<part name="B2" library="FormE" deviceset="CT2228" device="" value="BKCT2228-0-ND"/>
+<part name="B1" library="FormE" deviceset="CT2228" device="" value="BKCT2228-2-ND">
+<attribute name="PARTNO" value="CT2228-2"/>
+</part>
+<part name="B2" library="FormE" deviceset="CT2228" device="" value="BKCT2228-0-ND">
+<attribute name="PARTNO" value="CT2228-0"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -9263,8 +9267,12 @@ the car is power-cycled.</text>
 <instance part="D5" gate="G$1" x="558.8" y="261.62" rot="R90">
 <attribute name="PARTNO" x="558.8" y="261.62" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="B1" gate="G$1" x="548.64" y="254" rot="R270"/>
-<instance part="B2" gate="G$1" x="548.64" y="246.38" rot="R270"/>
+<instance part="B1" gate="G$1" x="548.64" y="254" rot="R270">
+<attribute name="PARTNO" x="548.64" y="254" size="6.4516" layer="96" display="off"/>
+</instance>
+<instance part="B2" gate="G$1" x="548.64" y="246.38" rot="R270">
+<attribute name="PARTNO" x="548.64" y="246.38" size="6.4516" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>

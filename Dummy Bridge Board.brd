@@ -3269,8 +3269,12 @@ Please make sure your boards conform to these design rules.</description>
 <element name="D5" library="FormE" package="SOD-128" value="PMEG3030EP,115" x="12.7" y="38.1" rot="R90">
 <attribute name="PARTNO" value="PMEG3030EP,115" x="12.7" y="31.115" size="1.016" layer="27" rot="R90" display="off"/>
 </element>
-<element name="B1" library="FormE" package="BANANA_SOCKET_VERT" value="BKCT2228-2-ND" x="9.525" y="100.33"/>
-<element name="B2" library="FormE" package="BANANA_SOCKET_VERT" value="BKCT2228-0-ND" x="25.4" y="100.33"/>
+<element name="B1" library="FormE" package="BANANA_SOCKET_VERT" value="BKCT2228-2-ND" x="9.525" y="100.33">
+<attribute name="PARTNO" value="CT2228-2" x="9.525" y="100.33" size="1.778" layer="27" display="off"/>
+</element>
+<element name="B2" library="FormE" package="BANANA_SOCKET_VERT" value="BKCT2228-0-ND" x="25.4" y="100.33">
+<attribute name="PARTNO" value="CT2228-0" x="25.4" y="100.33" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
