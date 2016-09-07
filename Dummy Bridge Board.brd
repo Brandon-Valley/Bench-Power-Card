@@ -3358,7 +3358,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="73.66" y="69.85" size="1.016" layer="25" rot="R180"/>
 <attribute name="PARTNO" value="CX3225GB12000P0HPQCC" x="69.215" y="69.85" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="H2" library="FormE" package="CARCONTROLLER-REF" value="CARCONTROLLER-REF" x="53.975" y="41.275" smashed="yes"/>
+<element name="H2" library="FormE" package="CARCONTROLLER-REF" value="CARCONTROLLER-REF" x="47.625" y="41.275" smashed="yes"/>
 <element name="D5" library="FormE" package="SOD-128" value="PMEG3030EP,115" x="12.7" y="38.1" rot="R90">
 <attribute name="PARTNO" value="PMEG3030EP,115" x="12.7" y="31.115" size="1.016" layer="27" rot="R90" display="off"/>
 </element>
