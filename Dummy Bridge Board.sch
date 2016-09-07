@@ -1797,6 +1797,20 @@ Source: http://www.osram.convergy.de/ ... LO_LS_LY L89K.pdf</description>
 <text x="-3.302" y="2.3368" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
 <text x="-3.4544" y="-0.635" size="1.27" layer="27" ratio="6" rot="SR0">&gt;VALUE</text>
 </package>
+<package name="0805">
+<wire x1="-0.41" y1="0.635" x2="0.41" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="-0.41" y1="-0.635" x2="0.41" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
+<smd name="1" x="-0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<smd name="2" x="0.95" y="0" dx="1.3" dy="1.5" layer="1"/>
+<text x="-0.635" y="1.27" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="51"/>
+<rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="GENERIC_BLOCK">
@@ -2167,6 +2181,19 @@ Source: http://www.osram.convergy.de/ ... LO_LS_LY L89K.pdf</description>
 <wire x1="12.7" y1="7.62" x2="-10.16" y2="7.62" width="0.1524" layer="94"/>
 <text x="0.1016" y="11.6586" size="2.0828" layer="95" ratio="6" rot="SR0" align="bottom-center">&gt;NAME</text>
 <text x="0.1778" y="8.6106" size="2.0828" layer="96" ratio="6" rot="SR0" align="bottom-center">&gt;VALUE</text>
+</symbol>
+<symbol name="LM3671">
+<pin name="VIN" x="-12.7" y="5.08" length="middle"/>
+<pin name="GND" x="-12.7" y="-5.08" length="middle"/>
+<pin name="EN" x="-12.7" y="0" length="middle"/>
+<pin name="FB" x="12.7" y="-5.08" length="middle" rot="R180"/>
+<pin name="SW" x="12.7" y="5.08" length="middle" rot="R180"/>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="-5.08" y="-10.16" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3030,6 +3057,41 @@ Source: http://www.osram.convergy.de/</description>
 <attribute name="PIN_COUNT" value="8" constant="no"/>
 <attribute name="VENDOR" value="Texas Instruments" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LM3671" prefix="U" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="LM3671" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="MF" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="FB" pad="4"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="SW" pad="5"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="L0805" prefix="L" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0805">
+<connects>
+<connect gate="G$1" pin="P$1" pad="1"/>
+<connect gate="G$1" pin="P$2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -9879,6 +9941,31 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="P+21" library="supply1" deviceset="VCC" device=""/>
 <part name="P+23" library="supply1" deviceset="VCC" device=""/>
 <part name="P+24" library="supply1" deviceset="VCC" device=""/>
+<part name="GND52" library="supply1" deviceset="GND" device=""/>
+<part name="GND54" library="supply1" deviceset="GND" device=""/>
+<part name="+3V313" library="supply1" deviceset="+3V3" device=""/>
+<part name="LED2" library="FormE" deviceset="LED" device="CHIP-LED0805" value="GREEN">
+<attribute name="PARTNO" value="598-8170-107F"/>
+</part>
+<part name="R36" library="rcl" deviceset="R-US_" device="R0603" value="1k">
+<attribute name="PARTNO" value="ERJ-6ENF1001V"/>
+</part>
+<part name="GND56" library="supply1" deviceset="GND" device=""/>
+<part name="P+4" library="supply1" deviceset="+5V" device=""/>
+<part name="U16" library="FormE" deviceset="LM3671" device="MF" value="LM3671MF-3.3/NOPB">
+<attribute name="PARTNO" value="LM3671MF-3.3/NOPB"/>
+</part>
+<part name="C40" library="rcl" deviceset="C-US" device="C0603K" value="4.7uF">
+<attribute name="PARTNO" value="GRM188R61A475KE15D"/>
+</part>
+<part name="C70" library="rcl" deviceset="C-US" device="C0603K" value="10uF">
+<attribute name="PARTNO" value="GRM21BR61E106KA73L"/>
+</part>
+<part name="GND57" library="supply1" deviceset="GND" device=""/>
+<part name="L5" library="FormE" deviceset="L0805" device="" value="2.2uH">
+<attribute name="PARTNO" value="74479775222"/>
+</part>
+<part name="+3V314" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9891,11 +9978,11 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="533.4" y1="-15.24" x2="533.4" y2="96.52" width="0.6096" layer="95"/>
 <text x="538.48" y="83.82" size="1.778" layer="95">VCC 12V?</text>
 <text x="538.48" y="78.74" size="1.778" layer="95">VCC from lv batt or big voltage regulator?</text>
-<text x="581.66" y="317.5" size="6.4516" layer="97" font="vector">CCBUS CONNECTOR</text>
-<wire x1="533.4" y1="330.2" x2="708.66" y2="330.2" width="0.6096" layer="95"/>
-<wire x1="708.66" y1="330.2" x2="708.66" y2="226.06" width="0.6096" layer="95"/>
-<wire x1="708.66" y1="226.06" x2="533.4" y2="226.06" width="0.6096" layer="95"/>
-<wire x1="533.4" y1="226.06" x2="533.4" y2="330.2" width="0.6096" layer="95"/>
+<text x="807.72" y="76.2" size="6.4516" layer="97" font="vector">CCBUS CONNECTOR</text>
+<wire x1="759.46" y1="88.9" x2="934.72" y2="88.9" width="0.6096" layer="95"/>
+<wire x1="934.72" y1="88.9" x2="934.72" y2="-15.24" width="0.6096" layer="95"/>
+<wire x1="934.72" y1="-15.24" x2="759.46" y2="-15.24" width="0.6096" layer="95"/>
+<wire x1="759.46" y1="-15.24" x2="759.46" y2="88.9" width="0.6096" layer="95"/>
 <wire x1="20.32" y1="147.32" x2="177.8" y2="147.32" width="0.6096" layer="97" style="longdash"/>
 <wire x1="177.8" y1="147.32" x2="177.8" y2="266.7" width="0.6096" layer="97" style="longdash"/>
 <wire x1="177.8" y1="266.7" x2="20.32" y2="266.7" width="0.6096" layer="97" style="longdash"/>
@@ -9946,12 +10033,19 @@ the car is power-cycled.</text>
 <wire x1="15.24" y1="-15.24" x2="15.24" y2="325.12" width="0.6096" layer="95"/>
 <text x="223.52" y="314.96" size="6.4516" layer="95">UART Connection</text>
 <text x="538.48" y="88.9" size="1.778" layer="95">on Bridge card:</text>
-<text x="335.28" y="375.92" size="6.4516" layer="95">Bench Power Card</text>
+<text x="439.42" y="378.46" size="6.4516" layer="95">Bench Power Card</text>
 <text x="584.2" y="198.12" size="6.4516" layer="95">Voltage Supervisor</text>
 <wire x1="533.4" y1="210.82" x2="736.6" y2="210.82" width="0.6096" layer="95"/>
 <wire x1="736.6" y1="210.82" x2="736.6" y2="111.76" width="0.6096" layer="95"/>
 <wire x1="736.6" y1="111.76" x2="533.4" y2="111.76" width="0.6096" layer="95"/>
 <wire x1="533.4" y1="111.76" x2="533.4" y2="210.82" width="0.6096" layer="95"/>
+<text x="589.28" y="259.08" size="1.778" layer="97">+3v3 buck</text>
+<text x="594.36" y="246.38" size="1.778" layer="97">74479775222</text>
+<text x="538.48" y="276.86" size="6.4516" layer="95">+3V3 Buck Converter</text>
+<wire x1="533.4" y1="287.02" x2="533.4" y2="226.06" width="0.6096" layer="95"/>
+<wire x1="533.4" y1="226.06" x2="647.7" y2="226.06" width="0.6096" layer="95"/>
+<wire x1="647.7" y1="226.06" x2="647.7" y2="287.02" width="0.6096" layer="95"/>
+<wire x1="647.7" y1="287.02" x2="533.4" y2="287.02" width="0.6096" layer="95"/>
 </plain>
 <instances>
 <instance part="P+30" gate="1" x="734.06" y="66.04"/>
@@ -10018,9 +10112,9 @@ the car is power-cycled.</text>
 </instance>
 <instance part="GND139" gate="1" x="546.1" y="22.86"/>
 <instance part="P+18" gate="VCC" x="546.1" y="73.66"/>
-<instance part="P+17" gate="1" x="586.74" y="309.88"/>
-<instance part="GND127" gate="1" x="574.04" y="297.18"/>
-<instance part="H4" gate="G$1" x="624.84" y="264.16"/>
+<instance part="P+17" gate="1" x="812.8" y="68.58"/>
+<instance part="GND127" gate="1" x="800.1" y="55.88"/>
+<instance part="H4" gate="G$1" x="850.9" y="22.86"/>
 <instance part="U14" gate="G$1" x="177.8" y="190.5">
 <attribute name="PARTNO" x="177.8" y="190.5" size="1.27" layer="96" display="off"/>
 </instance>
@@ -10257,17 +10351,17 @@ the car is power-cycled.</text>
 </instance>
 <instance part="VCC7" gate="G$1" x="386.08" y="60.96"/>
 <instance part="VCC8" gate="G$1" x="414.02" y="71.12"/>
-<instance part="H2" gate="G$1" x="800.1" y="-5.08"/>
-<instance part="P+1" gate="VCC" x="784.86" y="25.4"/>
-<instance part="GND1" gate="1" x="784.86" y="-7.62"/>
-<instance part="D5" gate="G$1" x="784.86" y="17.78" rot="R90">
-<attribute name="PARTNO" x="784.86" y="17.78" size="1.778" layer="96" rot="R90" display="off"/>
+<instance part="H2" gate="G$1" x="797.56" y="119.38"/>
+<instance part="P+1" gate="VCC" x="782.32" y="149.86"/>
+<instance part="GND1" gate="1" x="782.32" y="116.84"/>
+<instance part="D5" gate="G$1" x="782.32" y="142.24" rot="R90">
+<attribute name="PARTNO" x="782.32" y="142.24" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="B1" gate="G$1" x="774.7" y="10.16" rot="R270">
-<attribute name="PARTNO" x="774.7" y="10.16" size="6.4516" layer="96" display="off"/>
+<instance part="B1" gate="G$1" x="772.16" y="134.62" rot="R270">
+<attribute name="PARTNO" x="772.16" y="134.62" size="6.4516" layer="96" display="off"/>
 </instance>
-<instance part="B2" gate="G$1" x="774.7" y="2.54" rot="R270">
-<attribute name="PARTNO" x="774.7" y="2.54" size="6.4516" layer="96" display="off"/>
+<instance part="B2" gate="G$1" x="772.16" y="127" rot="R270">
+<attribute name="PARTNO" x="772.16" y="127" size="6.4516" layer="96" display="off"/>
 </instance>
 <instance part="+3V28" gate="G$1" x="711.2" y="190.5"/>
 <instance part="U21" gate="POWER" x="711.2" y="167.64"/>
@@ -10322,6 +10416,31 @@ the car is power-cycled.</text>
 <instance part="P+23" gate="VCC" x="657.86" y="162.56"/>
 <instance part="P+24" gate="VCC" x="680.72" y="162.56"/>
 <instance part="U21" gate="F" x="688.34" y="129.54"/>
+<instance part="GND52" gate="1" x="566.42" y="236.22"/>
+<instance part="GND54" gate="1" x="622.3" y="236.22"/>
+<instance part="+3V313" gate="G$1" x="622.3" y="256.54"/>
+<instance part="LED2" gate="G$1" x="635" y="254">
+<attribute name="PARTNO" x="635" y="254" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R36" gate="G$1" x="635" y="241.3" rot="R90">
+<attribute name="PARTNO" x="635" y="241.3" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="GND56" gate="1" x="635" y="231.14"/>
+<instance part="P+4" gate="1" x="553.72" y="256.54"/>
+<instance part="U16" gate="G$1" x="581.66" y="246.38">
+<attribute name="PARTNO" x="581.66" y="246.38" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C40" gate="G$1" x="553.72" y="246.38">
+<attribute name="PARTNO" x="553.72" y="246.38" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C70" gate="G$1" x="622.3" y="246.38">
+<attribute name="PARTNO" x="622.3" y="246.38" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="GND57" gate="1" x="553.72" y="236.22"/>
+<instance part="L5" gate="G$1" x="604.52" y="251.46">
+<attribute name="PARTNO" x="604.52" y="251.46" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="+3V314" gate="G$1" x="635" y="261.62"/>
 </instances>
 <busses>
 </busses>
@@ -10389,10 +10508,10 @@ the car is power-cycled.</text>
 </segment>
 <segment>
 <pinref part="GND127" gate="1" pin="GND"/>
-<wire x1="574.04" y1="299.72" x2="574.04" y2="302.26" width="0.1524" layer="91"/>
-<wire x1="574.04" y1="302.26" x2="581.66" y2="302.26" width="0.1524" layer="91"/>
-<wire x1="581.66" y1="302.26" x2="581.66" y2="292.1" width="0.1524" layer="91"/>
-<wire x1="581.66" y1="292.1" x2="589.28" y2="292.1" width="0.1524" layer="91"/>
+<wire x1="800.1" y1="58.42" x2="800.1" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="800.1" y1="60.96" x2="807.72" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="807.72" y1="60.96" x2="807.72" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="807.72" y1="50.8" x2="815.34" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="H4" gate="G$1" pin="GND"/>
 </segment>
 <segment>
@@ -10585,8 +10704,8 @@ the car is power-cycled.</text>
 <segment>
 <pinref part="B2" gate="G$1" pin="P$1"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="779.78" y1="2.54" x2="784.86" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="784.86" y1="2.54" x2="784.86" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="777.24" y1="127" x2="782.32" y2="127" width="0.1524" layer="91"/>
+<wire x1="782.32" y1="127" x2="782.32" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U21" gate="POWER" pin="GND"/>
@@ -10633,12 +10752,33 @@ the car is power-cycled.</text>
 <pinref part="GND98" gate="1" pin="GND"/>
 <wire x1="571.5" y1="139.7" x2="571.5" y2="137.16" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND56" gate="1" pin="GND"/>
+<pinref part="R36" gate="G$1" pin="1"/>
+<wire x1="635" y1="233.68" x2="635" y2="236.22" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND52" gate="1" pin="GND"/>
+<wire x1="566.42" y1="238.76" x2="566.42" y2="241.3" width="0.1524" layer="91"/>
+<pinref part="U16" gate="G$1" pin="GND"/>
+<wire x1="566.42" y1="241.3" x2="568.96" y2="241.3" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND57" gate="1" pin="GND"/>
+<pinref part="C40" gate="G$1" pin="2"/>
+<wire x1="553.72" y1="238.76" x2="553.72" y2="241.3" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C70" gate="G$1" pin="2"/>
+<pinref part="GND54" gate="1" pin="GND"/>
+<wire x1="622.3" y1="241.3" x2="622.3" y2="238.76" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
 <pinref part="P+17" gate="1" pin="+5V"/>
-<wire x1="586.74" y1="307.34" x2="586.74" y2="294.64" width="0.1524" layer="91"/>
-<wire x1="586.74" y1="294.64" x2="589.28" y2="294.64" width="0.1524" layer="91"/>
+<wire x1="812.8" y1="66.04" x2="812.8" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="812.8" y1="53.34" x2="815.34" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="H4" gate="G$1" pin="+5V"/>
 </segment>
 <segment>
@@ -10664,6 +10804,20 @@ the car is power-cycled.</text>
 <junction x="706.12" y="48.26"/>
 <wire x1="706.12" y1="48.26" x2="734.06" y2="48.26" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U16" gate="G$1" pin="EN"/>
+<wire x1="568.96" y1="246.38" x2="566.42" y2="246.38" width="0.1524" layer="91"/>
+<wire x1="566.42" y1="246.38" x2="566.42" y2="251.46" width="0.1524" layer="91"/>
+<pinref part="U16" gate="G$1" pin="VIN"/>
+<wire x1="566.42" y1="251.46" x2="568.96" y2="251.46" width="0.1524" layer="91"/>
+<junction x="566.42" y="251.46"/>
+<wire x1="566.42" y1="251.46" x2="553.72" y2="251.46" width="0.1524" layer="91"/>
+<pinref part="P+4" gate="1" pin="+5V"/>
+<wire x1="553.72" y1="251.46" x2="553.72" y2="254" width="0.1524" layer="91"/>
+<pinref part="C40" gate="G$1" pin="1"/>
+<wire x1="553.72" y1="251.46" x2="553.72" y2="248.92" width="0.1524" layer="91"/>
+<junction x="553.72" y="251.46"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -10688,7 +10842,7 @@ the car is power-cycled.</text>
 <segment>
 <pinref part="D5" gate="G$1" pin="K"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
-<wire x1="784.86" y1="22.86" x2="784.86" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="782.32" y1="147.32" x2="782.32" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R65" gate="G$1" pin="2"/>
@@ -10794,134 +10948,134 @@ the car is power-cycled.</text>
 </net>
 <net name="IMD_FAULT" class="0">
 <segment>
-<label x="703.58" y="256.54" size="1.778" layer="95" rot="MR0"/>
-<wire x1="703.58" y1="256.54" x2="660.4" y2="256.54" width="0.1524" layer="91"/>
+<label x="929.64" y="15.24" size="1.778" layer="95" rot="MR0"/>
+<wire x1="929.64" y1="15.24" x2="886.46" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="H4" gate="G$1" pin="IMD_FAULT"/>
 </segment>
 </net>
 <net name="AMS_FAULT" class="0">
 <segment>
-<label x="703.58" y="259.08" size="1.778" layer="95" rot="MR0"/>
-<wire x1="660.4" y1="259.08" x2="703.58" y2="259.08" width="0.1524" layer="91"/>
+<label x="929.64" y="17.78" size="1.778" layer="95" rot="MR0"/>
+<wire x1="886.46" y1="17.78" x2="929.64" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="H4" gate="G$1" pin="AMS_FAULT"/>
 </segment>
 </net>
 <net name="LSC_RESET" class="0">
 <segment>
-<wire x1="589.28" y1="261.62" x2="535.94" y2="261.62" width="0.1524" layer="91"/>
-<label x="535.94" y="261.62" size="1.778" layer="95"/>
+<wire x1="815.34" y1="20.32" x2="762" y2="20.32" width="0.1524" layer="91"/>
+<label x="762" y="20.32" size="1.778" layer="95"/>
 <pinref part="H4" gate="G$1" pin="LSC_RESET"/>
 </segment>
 </net>
 <net name="SC_STATE_3V3" class="0">
 <segment>
-<wire x1="535.94" y1="259.08" x2="589.28" y2="259.08" width="0.1524" layer="91"/>
-<label x="535.94" y="259.08" size="1.778" layer="95"/>
+<wire x1="762" y1="17.78" x2="815.34" y2="17.78" width="0.1524" layer="91"/>
+<label x="762" y="17.78" size="1.778" layer="95"/>
 <pinref part="H4" gate="G$1" pin="SC_STATE"/>
 </segment>
 </net>
 <net name="CCBUS_CAN_P" class="1">
 <segment>
-<wire x1="703.58" y1="233.68" x2="660.4" y2="233.68" width="0.1524" layer="91"/>
-<label x="703.58" y="233.68" size="1.778" layer="95" rot="MR0"/>
+<wire x1="929.64" y1="-7.62" x2="886.46" y2="-7.62" width="0.1524" layer="91"/>
+<label x="929.64" y="-7.62" size="1.778" layer="95" rot="MR0"/>
 <pinref part="H4" gate="G$1" pin="CCBUS_CAN_P"/>
 </segment>
 </net>
 <net name="CCBUS_CAN_N" class="1">
 <segment>
-<wire x1="660.4" y1="236.22" x2="703.58" y2="236.22" width="0.1524" layer="91"/>
-<label x="703.58" y="236.22" size="1.778" layer="95" rot="MR0"/>
+<wire x1="886.46" y1="-5.08" x2="929.64" y2="-5.08" width="0.1524" layer="91"/>
+<label x="929.64" y="-5.08" size="1.778" layer="95" rot="MR0"/>
 <pinref part="H4" gate="G$1" pin="CCBUS_CAN_N"/>
 </segment>
 </net>
 <net name="GLVS_VOLTAGE_SENSE" class="2">
 <segment>
-<wire x1="589.28" y1="246.38" x2="535.94" y2="246.38" width="0.1524" layer="91"/>
-<label x="535.94" y="246.38" size="1.778" layer="95"/>
+<wire x1="815.34" y1="5.08" x2="762" y2="5.08" width="0.1524" layer="91"/>
+<label x="762" y="5.08" size="1.778" layer="95"/>
 <pinref part="H4" gate="G$1" pin="GLVS_VOLT_SENSE"/>
 </segment>
 </net>
 <net name="BRAKE_POSITION" class="2">
 <segment>
-<label x="535.94" y="256.54" size="1.778" layer="95"/>
-<wire x1="589.28" y1="256.54" x2="535.94" y2="256.54" width="0.1524" layer="91"/>
+<label x="762" y="15.24" size="1.778" layer="95"/>
+<wire x1="815.34" y1="15.24" x2="762" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="H4" gate="G$1" pin="BRAKE_POSITION_SENSE"/>
 </segment>
 </net>
 <net name="HARD_BRAKING" class="0">
 <segment>
-<label x="703.58" y="243.84" size="1.778" layer="95" rot="MR0"/>
-<wire x1="660.4" y1="243.84" x2="703.58" y2="243.84" width="0.1524" layer="91"/>
+<label x="929.64" y="2.54" size="1.778" layer="95" rot="MR0"/>
+<wire x1="886.46" y1="2.54" x2="929.64" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="H4" gate="G$1" pin="HARD_BRAKING"/>
 </segment>
 </net>
 <net name="IMD_FET_ENABLE" class="0">
 <segment>
-<label x="535.94" y="266.7" size="1.778" layer="95"/>
-<wire x1="589.28" y1="266.7" x2="535.94" y2="266.7" width="0.1524" layer="91"/>
+<label x="762" y="25.4" size="1.778" layer="95"/>
+<wire x1="815.34" y1="25.4" x2="762" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="H4" gate="G$1" pin="IMD_FET_EN"/>
 </segment>
 </net>
 <net name="AMS_FET_ENABLE" class="0">
 <segment>
-<label x="535.94" y="271.78" size="1.778" layer="95"/>
-<wire x1="589.28" y1="271.78" x2="535.94" y2="271.78" width="0.1524" layer="91"/>
+<label x="762" y="30.48" size="1.778" layer="95"/>
+<wire x1="815.34" y1="30.48" x2="762" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="H4" gate="G$1" pin="AMS_FET_EN"/>
 </segment>
 </net>
 <net name="BSPD_FET_ENABLE" class="0">
 <segment>
-<label x="535.94" y="274.32" size="1.778" layer="95"/>
-<wire x1="589.28" y1="274.32" x2="535.94" y2="274.32" width="0.1524" layer="91"/>
+<label x="762" y="33.02" size="1.778" layer="95"/>
+<wire x1="815.34" y1="33.02" x2="762" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="H4" gate="G$1" pin="BSPD_FET_EN"/>
 </segment>
 </net>
 <net name="BATTERY_COOLING_ENABLE" class="0">
 <segment>
-<label x="535.94" y="279.4" size="1.778" layer="95"/>
-<wire x1="535.94" y1="279.4" x2="589.28" y2="279.4" width="0.1524" layer="91"/>
+<label x="762" y="38.1" size="1.778" layer="95"/>
+<wire x1="762" y1="38.1" x2="815.34" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="H4" gate="G$1" pin="BATT_COOLING_EN"/>
 </segment>
 </net>
 <net name="RTDS_ENABLE" class="0">
 <segment>
-<label x="535.94" y="284.48" size="1.778" layer="95"/>
-<wire x1="589.28" y1="284.48" x2="535.94" y2="284.48" width="0.1524" layer="91"/>
+<label x="762" y="43.18" size="1.778" layer="95"/>
+<wire x1="815.34" y1="43.18" x2="762" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="H4" gate="G$1" pin="RTDS_EN"/>
 </segment>
 </net>
 <net name="BRAKE_LIGHT_ENABLE" class="0">
 <segment>
-<label x="535.94" y="281.94" size="1.778" layer="95"/>
-<wire x1="589.28" y1="281.94" x2="535.94" y2="281.94" width="0.1524" layer="91"/>
+<label x="762" y="40.64" size="1.778" layer="95"/>
+<wire x1="815.34" y1="40.64" x2="762" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="H4" gate="G$1" pin="BRAKE_LIGHT_EN"/>
 </segment>
 </net>
 <net name="MOTOR_COOLING_ENABLE" class="0">
 <segment>
-<label x="535.94" y="276.86" size="1.778" layer="95"/>
-<wire x1="589.28" y1="276.86" x2="535.94" y2="276.86" width="0.1524" layer="91"/>
+<label x="762" y="35.56" size="1.778" layer="95"/>
+<wire x1="815.34" y1="35.56" x2="762" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="H4" gate="G$1" pin="MOTOR_COOLING_EN"/>
 </segment>
 </net>
 <net name="MOTOR_CONTROLLER_COOLING_ENABLE" class="0">
 <segment>
-<label x="535.94" y="269.24" size="1.778" layer="95"/>
-<wire x1="589.28" y1="269.24" x2="535.94" y2="269.24" width="0.1524" layer="91"/>
+<label x="762" y="27.94" size="1.778" layer="95"/>
+<wire x1="815.34" y1="27.94" x2="762" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="H4" gate="G$1" pin="MOTOR_CONTROLLER_COOLING_EN"/>
 </segment>
 </net>
 <net name="LSC_STATE_SIGNAL" class="0">
 <segment>
-<label x="535.94" y="264.16" size="1.778" layer="95"/>
-<wire x1="589.28" y1="264.16" x2="535.94" y2="264.16" width="0.1524" layer="91"/>
+<label x="762" y="22.86" size="1.778" layer="95"/>
+<wire x1="815.34" y1="22.86" x2="762" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="H4" gate="G$1" pin="LSC_STATE_SIGNAL"/>
 </segment>
 </net>
 <net name="UART_RX1" class="0">
 <segment>
-<wire x1="660.4" y1="261.62" x2="706.12" y2="261.62" width="0.1524" layer="91"/>
-<label x="706.12" y="261.62" size="1.778" layer="95" rot="MR0"/>
+<wire x1="886.46" y1="20.32" x2="932.18" y2="20.32" width="0.1524" layer="91"/>
+<label x="932.18" y="20.32" size="1.778" layer="95" rot="MR0"/>
 <pinref part="H4" gate="G$1" pin="UART_RX1"/>
 </segment>
 <segment>
@@ -10932,8 +11086,8 @@ the car is power-cycled.</text>
 </net>
 <net name="UART_TX1" class="0">
 <segment>
-<label x="706.12" y="264.16" size="1.778" layer="95" rot="MR0"/>
-<wire x1="660.4" y1="264.16" x2="706.12" y2="264.16" width="0.1524" layer="91"/>
+<label x="932.18" y="22.86" size="1.778" layer="95" rot="MR0"/>
+<wire x1="886.46" y1="22.86" x2="932.18" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="H4" gate="G$1" pin="UART_TX1"/>
 </segment>
 <segment>
@@ -10944,8 +11098,8 @@ the car is power-cycled.</text>
 </net>
 <net name="UART_RX2" class="0">
 <segment>
-<wire x1="660.4" y1="266.7" x2="706.12" y2="266.7" width="0.1524" layer="91"/>
-<label x="706.12" y="266.7" size="1.778" layer="95" rot="MR0"/>
+<wire x1="886.46" y1="25.4" x2="932.18" y2="25.4" width="0.1524" layer="91"/>
+<label x="932.18" y="25.4" size="1.778" layer="95" rot="MR0"/>
 <pinref part="H4" gate="G$1" pin="UART_RX2"/>
 </segment>
 <segment>
@@ -10956,8 +11110,8 @@ the car is power-cycled.</text>
 </net>
 <net name="UART_TX2" class="0">
 <segment>
-<label x="706.12" y="269.24" size="1.778" layer="95" rot="MR0"/>
-<wire x1="660.4" y1="269.24" x2="706.12" y2="269.24" width="0.1524" layer="91"/>
+<label x="932.18" y="27.94" size="1.778" layer="95" rot="MR0"/>
+<wire x1="886.46" y1="27.94" x2="932.18" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="H4" gate="G$1" pin="UART_TX2"/>
 </segment>
 <segment>
@@ -10968,8 +11122,8 @@ the car is power-cycled.</text>
 </net>
 <net name="UART_RX3" class="0">
 <segment>
-<wire x1="660.4" y1="271.78" x2="706.12" y2="271.78" width="0.1524" layer="91"/>
-<label x="706.12" y="271.78" size="1.778" layer="95" rot="MR0"/>
+<wire x1="886.46" y1="30.48" x2="932.18" y2="30.48" width="0.1524" layer="91"/>
+<label x="932.18" y="30.48" size="1.778" layer="95" rot="MR0"/>
 <pinref part="H4" gate="G$1" pin="UART_RX3"/>
 </segment>
 <segment>
@@ -10980,8 +11134,8 @@ the car is power-cycled.</text>
 </net>
 <net name="UART_TX3" class="0">
 <segment>
-<label x="706.12" y="274.32" size="1.778" layer="95" rot="MR0"/>
-<wire x1="660.4" y1="274.32" x2="706.12" y2="274.32" width="0.1524" layer="91"/>
+<label x="932.18" y="33.02" size="1.778" layer="95" rot="MR0"/>
+<wire x1="886.46" y1="33.02" x2="932.18" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="H4" gate="G$1" pin="UART_TX3"/>
 </segment>
 <segment>
@@ -10992,8 +11146,8 @@ the car is power-cycled.</text>
 </net>
 <net name="UART_RX4" class="0">
 <segment>
-<wire x1="660.4" y1="276.86" x2="706.12" y2="276.86" width="0.1524" layer="91"/>
-<label x="706.12" y="276.86" size="1.778" layer="95" rot="MR0"/>
+<wire x1="886.46" y1="35.56" x2="932.18" y2="35.56" width="0.1524" layer="91"/>
+<label x="932.18" y="35.56" size="1.778" layer="95" rot="MR0"/>
 <pinref part="H4" gate="G$1" pin="UART_RX4"/>
 </segment>
 <segment>
@@ -11004,8 +11158,8 @@ the car is power-cycled.</text>
 </net>
 <net name="UART_TX4" class="0">
 <segment>
-<label x="706.12" y="279.4" size="1.778" layer="95" rot="MR0"/>
-<wire x1="660.4" y1="279.4" x2="706.12" y2="279.4" width="0.1524" layer="91"/>
+<label x="932.18" y="38.1" size="1.778" layer="95" rot="MR0"/>
+<wire x1="886.46" y1="38.1" x2="932.18" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="H4" gate="G$1" pin="UART_TX4"/>
 </segment>
 <segment>
@@ -11016,120 +11170,120 @@ the car is power-cycled.</text>
 </net>
 <net name="TS_BATTERY_VOLTAGE_SENSE" class="0">
 <segment>
-<label x="535.94" y="251.46" size="1.778" layer="95"/>
-<wire x1="535.94" y1="251.46" x2="589.28" y2="251.46" width="0.1524" layer="91"/>
+<label x="762" y="10.16" size="1.778" layer="95"/>
+<wire x1="762" y1="10.16" x2="815.34" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="H4" gate="G$1" pin="TS_BATT_VOLT_SENSE"/>
 </segment>
 </net>
 <net name="GLVS_FAULT" class="0">
 <segment>
-<wire x1="703.58" y1="248.92" x2="660.4" y2="248.92" width="0.1524" layer="91"/>
-<label x="703.58" y="248.92" size="1.778" layer="95" rot="MR0"/>
+<wire x1="929.64" y1="7.62" x2="886.46" y2="7.62" width="0.1524" layer="91"/>
+<label x="929.64" y="7.62" size="1.778" layer="95" rot="MR0"/>
 <pinref part="H4" gate="G$1" pin="GLVS_FAULT"/>
 </segment>
 </net>
 <net name="BSPD_FAULT" class="0">
 <segment>
-<wire x1="703.58" y1="246.38" x2="660.4" y2="246.38" width="0.1524" layer="91"/>
-<label x="703.58" y="246.38" size="1.778" layer="95" rot="MR0"/>
+<wire x1="929.64" y1="5.08" x2="886.46" y2="5.08" width="0.1524" layer="91"/>
+<label x="929.64" y="5.08" size="1.778" layer="95" rot="MR0"/>
 <pinref part="H4" gate="G$1" pin="BSPD_FAULT"/>
 </segment>
 </net>
 <net name="CCBUS_FAULT" class="0">
 <segment>
-<wire x1="703.58" y1="254" x2="660.4" y2="254" width="0.1524" layer="91"/>
-<label x="703.58" y="254" size="1.778" layer="95" rot="MR0"/>
+<wire x1="929.64" y1="12.7" x2="886.46" y2="12.7" width="0.1524" layer="91"/>
+<label x="929.64" y="12.7" size="1.778" layer="95" rot="MR0"/>
 <pinref part="H4" gate="G$1" pin="CCBUS_FAULT"/>
 </segment>
 </net>
 <net name="CAR_SUBSYSTEM_FAULT" class="0">
 <segment>
-<wire x1="703.58" y1="251.46" x2="660.4" y2="251.46" width="0.1524" layer="91"/>
-<label x="703.58" y="251.46" size="1.778" layer="95" rot="MR0"/>
+<wire x1="929.64" y1="10.16" x2="886.46" y2="10.16" width="0.1524" layer="91"/>
+<label x="929.64" y="10.16" size="1.778" layer="95" rot="MR0"/>
 <pinref part="H4" gate="G$1" pin="CAR_SUBSYS_FAULT"/>
 </segment>
 </net>
 <net name="PROGRAMMING_CAN_P" class="0">
 <segment>
-<wire x1="535.94" y1="289.56" x2="589.28" y2="289.56" width="0.1524" layer="91"/>
-<label x="535.94" y="289.56" size="1.778" layer="95"/>
+<wire x1="762" y1="48.26" x2="815.34" y2="48.26" width="0.1524" layer="91"/>
+<label x="762" y="48.26" size="1.778" layer="95"/>
 <pinref part="H4" gate="G$1" pin="PROG_CAN_P"/>
 </segment>
 </net>
 <net name="PROGRAMMING_CAN_N" class="0">
 <segment>
-<wire x1="535.94" y1="287.02" x2="589.28" y2="287.02" width="0.1524" layer="91"/>
-<label x="535.94" y="287.02" size="1.778" layer="95"/>
+<wire x1="762" y1="45.72" x2="815.34" y2="45.72" width="0.1524" layer="91"/>
+<label x="762" y="45.72" size="1.778" layer="95"/>
 <pinref part="H4" gate="G$1" pin="PROG_CAN_N"/>
 </segment>
 </net>
 <net name="DIGITAL_SPARE_1" class="0">
 <segment>
-<wire x1="703.58" y1="289.56" x2="660.4" y2="289.56" width="0.1524" layer="91"/>
-<label x="703.58" y="289.56" size="1.778" layer="95" rot="MR0"/>
+<wire x1="929.64" y1="48.26" x2="886.46" y2="48.26" width="0.1524" layer="91"/>
+<label x="929.64" y="48.26" size="1.778" layer="95" rot="MR0"/>
 <pinref part="H4" gate="G$1" pin="DIGITAL_SPARE_1"/>
 </segment>
 </net>
 <net name="DIGITAL_SPARE_2" class="0">
 <segment>
-<wire x1="703.58" y1="287.02" x2="660.4" y2="287.02" width="0.1524" layer="91"/>
-<label x="703.58" y="287.02" size="1.778" layer="95" rot="MR0"/>
+<wire x1="929.64" y1="45.72" x2="886.46" y2="45.72" width="0.1524" layer="91"/>
+<label x="929.64" y="45.72" size="1.778" layer="95" rot="MR0"/>
 <pinref part="H4" gate="G$1" pin="DIGITAL_SPARE_2"/>
 </segment>
 </net>
 <net name="DIGITAL_SPARE_3" class="0">
 <segment>
-<wire x1="703.58" y1="284.48" x2="660.4" y2="284.48" width="0.1524" layer="91"/>
-<label x="703.58" y="284.48" size="1.778" layer="95" rot="MR0"/>
+<wire x1="929.64" y1="43.18" x2="886.46" y2="43.18" width="0.1524" layer="91"/>
+<label x="929.64" y="43.18" size="1.778" layer="95" rot="MR0"/>
 <pinref part="H4" gate="G$1" pin="DIGITAL_SPARE_3"/>
 </segment>
 </net>
 <net name="DIGITAL_SPARE_4" class="0">
 <segment>
-<wire x1="703.58" y1="281.94" x2="660.4" y2="281.94" width="0.1524" layer="91"/>
-<label x="703.58" y="281.94" size="1.778" layer="95" rot="MR0"/>
+<wire x1="929.64" y1="40.64" x2="886.46" y2="40.64" width="0.1524" layer="91"/>
+<label x="929.64" y="40.64" size="1.778" layer="95" rot="MR0"/>
 <pinref part="H4" gate="G$1" pin="DIGITAL_SPARE_4"/>
 </segment>
 </net>
 <net name="ANALOG_SPARE_1" class="0">
 <segment>
-<wire x1="535.94" y1="243.84" x2="589.28" y2="243.84" width="0.1524" layer="91"/>
-<label x="535.94" y="243.84" size="1.778" layer="95"/>
+<wire x1="762" y1="2.54" x2="815.34" y2="2.54" width="0.1524" layer="91"/>
+<label x="762" y="2.54" size="1.778" layer="95"/>
 <pinref part="H4" gate="G$1" pin="ANALOG_SPARE_1"/>
 </segment>
 </net>
 <net name="ANALOG_SPARE_2" class="0">
 <segment>
-<wire x1="535.94" y1="241.3" x2="589.28" y2="241.3" width="0.1524" layer="91"/>
-<label x="535.94" y="241.3" size="1.778" layer="95"/>
+<wire x1="762" y1="0" x2="815.34" y2="0" width="0.1524" layer="91"/>
+<label x="762" y="0" size="1.778" layer="95"/>
 <pinref part="H4" gate="G$1" pin="ANALOG_SPARE_2"/>
 </segment>
 </net>
 <net name="ANALOG_SPARE_3" class="0">
 <segment>
-<wire x1="535.94" y1="238.76" x2="589.28" y2="238.76" width="0.1524" layer="91"/>
-<label x="535.94" y="238.76" size="1.778" layer="95"/>
+<wire x1="762" y1="-2.54" x2="815.34" y2="-2.54" width="0.1524" layer="91"/>
+<label x="762" y="-2.54" size="1.778" layer="95"/>
 <pinref part="H4" gate="G$1" pin="ANALOG_SPARE_3"/>
 </segment>
 </net>
 <net name="ANALOG_SPARE_4" class="0">
 <segment>
-<wire x1="535.94" y1="236.22" x2="589.28" y2="236.22" width="0.1524" layer="91"/>
-<label x="535.94" y="236.22" size="1.778" layer="95"/>
+<wire x1="762" y1="-5.08" x2="815.34" y2="-5.08" width="0.1524" layer="91"/>
+<label x="762" y="-5.08" size="1.778" layer="95"/>
 <pinref part="H4" gate="G$1" pin="ANALOG_SPARE_4"/>
 </segment>
 </net>
 <net name="GLVS_CURRENT_SENSE" class="0">
 <segment>
-<wire x1="535.94" y1="254" x2="589.28" y2="254" width="0.1524" layer="91"/>
-<label x="535.94" y="254" size="1.778" layer="95"/>
+<wire x1="762" y1="12.7" x2="815.34" y2="12.7" width="0.1524" layer="91"/>
+<label x="762" y="12.7" size="1.778" layer="95"/>
 <pinref part="H4" gate="G$1" pin="GLVS_CURRENT_SENSE"/>
 </segment>
 </net>
 <net name="TS_CURRENT_SENSE" class="2">
 <segment>
-<label x="535.94" y="248.92" size="1.778" layer="95"/>
-<wire x1="535.94" y1="248.92" x2="589.28" y2="248.92" width="0.1524" layer="91"/>
+<label x="762" y="7.62" size="1.778" layer="95"/>
+<wire x1="762" y1="7.62" x2="815.34" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="H4" gate="G$1" pin="TS_CURRENT_SENSE"/>
 </segment>
 </net>
@@ -11785,8 +11939,8 @@ the car is power-cycled.</text>
 <segment>
 <pinref part="B1" gate="G$1" pin="P$1"/>
 <pinref part="D5" gate="G$1" pin="A"/>
-<wire x1="779.78" y1="10.16" x2="784.86" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="784.86" y1="10.16" x2="784.86" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="777.24" y1="134.62" x2="782.32" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="782.32" y1="134.62" x2="782.32" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -11799,6 +11953,25 @@ the car is power-cycled.</text>
 <pinref part="C43" gate="G$1" pin="1"/>
 <wire x1="716.28" y1="185.42" x2="716.28" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="+3V28" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="+3V313" gate="G$1" pin="+3V3"/>
+<pinref part="C70" gate="G$1" pin="1"/>
+<wire x1="622.3" y1="254" x2="622.3" y2="251.46" width="0.1524" layer="91"/>
+<wire x1="622.3" y1="251.46" x2="622.3" y2="248.92" width="0.1524" layer="91"/>
+<wire x1="622.3" y1="251.46" x2="614.68" y2="251.46" width="0.1524" layer="91"/>
+<junction x="622.3" y="251.46"/>
+<wire x1="614.68" y1="251.46" x2="614.68" y2="241.3" width="0.1524" layer="91"/>
+<junction x="614.68" y="251.46"/>
+<pinref part="U16" gate="G$1" pin="FB"/>
+<wire x1="614.68" y1="241.3" x2="594.36" y2="241.3" width="0.1524" layer="91"/>
+<pinref part="L5" gate="G$1" pin="P$2"/>
+<wire x1="612.14" y1="251.46" x2="614.68" y2="251.46" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<pinref part="+3V314" gate="G$1" pin="+3V3"/>
+<wire x1="635" y1="256.54" x2="635" y2="259.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="!POR" class="0">
@@ -11813,8 +11986,8 @@ the car is power-cycled.</text>
 </segment>
 <segment>
 <pinref part="H4" gate="G$1" pin="!POR!"/>
-<wire x1="660.4" y1="241.3" x2="706.12" y2="241.3" width="0.1524" layer="91"/>
-<label x="701.04" y="241.3" size="1.778" layer="95"/>
+<wire x1="886.46" y1="0" x2="932.18" y2="0" width="0.1524" layer="91"/>
+<label x="927.1" y="0" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MAN_RESET_SIGNAL" class="0">
@@ -11879,6 +12052,20 @@ the car is power-cycled.</text>
 <junction x="556.26" y="152.4"/>
 <pinref part="S2" gate="G$1" pin="1"/>
 <pinref part="S2" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$56" class="0">
+<segment>
+<pinref part="R36" gate="G$1" pin="2"/>
+<pinref part="LED2" gate="G$1" pin="C"/>
+<wire x1="635" y1="246.38" x2="635" y2="248.92" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$57" class="0">
+<segment>
+<pinref part="U16" gate="G$1" pin="SW"/>
+<pinref part="L5" gate="G$1" pin="P$1"/>
+<wire x1="594.36" y1="251.46" x2="596.9" y2="251.46" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
