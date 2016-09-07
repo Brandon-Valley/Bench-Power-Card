@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9578,27 +9578,27 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </part>
 <part name="GND129" library="supply1" deviceset="GND" device=""/>
 <part name="C42" library="rcl" deviceset="C-US" device="C0603K" value="0.012uF">
-<attribute name="PARTNO" value="GRM216R71H123KA01D"/>
+<attribute name="PARTNO" value="GRM188R71H123KA01D"/>
 </part>
 <part name="R42" library="rcl" deviceset="R-US_" device="R0603" value="162k">
-<attribute name="PARTNO" value="ERJ-6ENF1623V"/>
+<attribute name="PARTNO" value="ERJ-3EKF1623V"/>
 </part>
 <part name="R49" library="rcl" deviceset="R-US_" device="R0603" value="15k">
-<attribute name="PARTNO" value="ERJ-6ENF1502V"/>
+<attribute name="PARTNO" value="ERJ-3EKF1502V"/>
 </part>
 <part name="C85" library="rcl" deviceset="C-US" device="C0603K" value="9pF">
-<attribute name="PARTNO" value="CL21C090CBANNNC"/>
+<attribute name="PARTNO" value="GRM1885C1H9R0DA01D"/>
 </part>
 <part name="GND130" library="supply1" deviceset="GND" device=""/>
 <part name="GND131" library="supply1" deviceset="GND" device=""/>
 <part name="C86" library="rcl" deviceset="C-US" device="C0603K" value="0.1uF">
-<attribute name="PARTNO" value="GRM21BR71E104KA01L"/>
+<attribute name="PARTNO" value="GRM188R71E104KA01D"/>
 </part>
 <part name="R62" library="rcl" deviceset="R-US_" device="R0603" value="60.4k">
-<attribute name="PARTNO" value="ERJ-6ENF6042V"/>
+<attribute name="PARTNO" value="ERJ-3EKF6042V"/>
 </part>
 <part name="R68" library="rcl" deviceset="R-US_" device="R0603" value="11.5k">
-<attribute name="PARTNO" value="ERJ-6ENF1152V"/>
+<attribute name="PARTNO" value="ERJ-3EKF1152V"/>
 </part>
 <part name="GND132" library="supply1" deviceset="GND" device=""/>
 <part name="D21" library="FormE" deviceset="VISHAY-50WQ10FNPBF" device="" value="50WQ10FNPBF">
@@ -9620,10 +9620,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="PARTNO" value="GRM31CR61A476ME15L"/>
 </part>
 <part name="C90" library="rcl" deviceset="C-US" device="C0603K" value="10uF">
-<attribute name="PARTNO" value="GRM21BR61E106KA73L"/>
+<attribute name="PARTNO" value="EMK107BBJ106MA-T"/>
 </part>
 <part name="C91" library="rcl" deviceset="C-US" device="C0603K" value="10uF">
-<attribute name="PARTNO" value="GRM21BR61E106KA73L"/>
+<attribute name="PARTNO" value="EMK107BBJ106MA-T"/>
 </part>
 <part name="GND136" library="supply1" deviceset="GND" device=""/>
 <part name="GND137" library="supply1" deviceset="GND" device=""/>
@@ -9663,10 +9663,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="PARTNO" value="PDS1-S5-S5-M-TR"/>
 </part>
 <part name="C47" library="rcl" deviceset="C-US" device="C0603K" value="4.7uF">
-<attribute name="PARTNO" value="GRM188R71E104KA01D"/>
+<attribute name="PARTNO" value="GRM188R61C475KAAJD"/>
 </part>
 <part name="C48" library="rcl" deviceset="C-US" device="C0603K" value="4.7uF">
-<attribute name="PARTNO" value="GRM188R71E104KA01D"/>
+<attribute name="PARTNO" value="GRM188R61C475KAAJD"/>
 </part>
 <part name="C49" library="rcl" deviceset="C-US" device="C0603K" value="0.1uF">
 <attribute name="PARTNO" value="GRM188R71E104KA01D"/>
@@ -9677,7 +9677,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="PARTNO" value="FT4232HL-REEL"/>
 </part>
 <part name="C50" library="rcl" deviceset="C-US" device="C0603K" value="4.7uF">
-<attribute name="PARTNO" value="GRM188R71E104KA01D"/>
+<attribute name="PARTNO" value="GRM188R61C475KAAJD"/>
 </part>
 <part name="C51" library="rcl" deviceset="C-US" device="C0603K" value="0.1uF">
 <attribute name="PARTNO" value="GRM188R71E104KA01D"/>
@@ -9691,7 +9691,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND78" library="supply1" deviceset="GND" device=""/>
 <part name="GND79" library="supply1" deviceset="GND" device=""/>
 <part name="R35" library="rcl" deviceset="R-US_" device="R0603" value="12k">
-<attribute name="PARTNO" value="ERJ-3EKF24R0V"/>
+<attribute name="PARTNO" value="ERJ-3EKF1202V"/>
 </part>
 <part name="GND80" library="supply1" deviceset="GND" device=""/>
 <part name="C53" library="rcl" deviceset="C-US" device="C0603K" value="0.1uF">
@@ -9719,21 +9719,21 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND83" library="supply1" deviceset="GND" device=""/>
 <part name="GND84" library="supply1" deviceset="GND" device=""/>
 <part name="C60" library="rcl" deviceset="C-US" device="C0603K" value="18pF">
-<attribute name="PARTNO" value="GRM188R71E104KA01D"/>
+<attribute name="PARTNO" value="GRM1885C1H180JA01D"/>
 </part>
 <part name="C61" library="rcl" deviceset="C-US" device="C0603K" value="18pF">
-<attribute name="PARTNO" value="GRM188R71E104KA01D"/>
+<attribute name="PARTNO" value="GRM1885C1H180JA01D"/>
 </part>
 <part name="GND85" library="supply1" deviceset="GND" device=""/>
 <part name="GND86" library="supply1" deviceset="GND" device=""/>
 <part name="L2" library="launchpad" deviceset="INDUCTOR" device="" value="600R @ 100M">
-<attribute name="PARTNO" value="BLM21PG221SN1D"/>
+<attribute name="PARTNO" value="BLM21AG601SN1D"/>
 </part>
 <part name="L3" library="launchpad" deviceset="INDUCTOR" device="" value="600R @ 100M">
-<attribute name="PARTNO" value="BLM21PG221SN1D"/>
+<attribute name="PARTNO" value="BLM21AG601SN1D"/>
 </part>
 <part name="C63" library="rcl" deviceset="C-US" device="C0603K" value="4.7uF">
-<attribute name="PARTNO" value="GRM188R71E104KA01D"/>
+<attribute name="PARTNO" value="GRM188R61C475KAAJD"/>
 </part>
 <part name="C64" library="rcl" deviceset="C-US" device="C0603K" value="0.1uF">
 <attribute name="PARTNO" value="GRM188R71E104KA01D"/>
@@ -9741,7 +9741,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND90" library="supply1" deviceset="GND" device=""/>
 <part name="GND91" library="supply1" deviceset="GND" device=""/>
 <part name="C65" library="rcl" deviceset="C-US" device="C0603K" value="4.7uF">
-<attribute name="PARTNO" value="GRM188R71E104KA01D"/>
+<attribute name="PARTNO" value="GRM188R61C475KAAJD"/>
 </part>
 <part name="C66" library="rcl" deviceset="C-US" device="C0603K" value="0.1uF">
 <attribute name="PARTNO" value="GRM188R71E104KA01D"/>
@@ -9749,7 +9749,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND92" library="supply1" deviceset="GND" device=""/>
 <part name="GND93" library="supply1" deviceset="GND" device=""/>
 <part name="L4" library="launchpad" deviceset="INDUCTOR" device="" value="600R @ 100M">
-<attribute name="PARTNO" value="BLM21PG221SN1D"/>
+<attribute name="PARTNO" value="BLM21AG601SN1D"/>
 </part>
 <part name="C67" library="rcl" deviceset="C-US" device="C0603K" value="0.1uF">
 <attribute name="PARTNO" value="GRM188R71E104KA01D"/>
@@ -9809,7 +9809,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="PARTNO" value="598-8170-107F"/>
 </part>
 <part name="R7" library="rcl" deviceset="R-US_" device="R0603" value="1k">
-<attribute name="PARTNO" value="ERJ-6ENF1001V"/>
+<attribute name="PARTNO" value="ERJ-3EKF1001V"/>
 </part>
 <part name="GND34" library="supply1" deviceset="GND" device=""/>
 <part name="VCC9" library="supply1" deviceset="VCCIO" device=""/>
@@ -9817,49 +9817,49 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="PARTNO" value="SN74HC595DR"/>
 </part>
 <part name="R37" library="rcl" deviceset="R-US_" device="R0603" value="330R">
-<attribute name="PARTNO" value="ERJ-3EKF24R0V"/>
+<attribute name="PARTNO" value="ERJ-3EKF3300V"/>
 </part>
 <part name="ATX" library="FormE" deviceset="LED" device="CHIP-LED0805" value="ORANGE">
 <attribute name="PARTNO" value="598-8130-107F"/>
 </part>
 <part name="R38" library="rcl" deviceset="R-US_" device="R0603" value="330R">
-<attribute name="PARTNO" value="ERJ-3EKF24R0V"/>
+<attribute name="PARTNO" value="ERJ-3EKF3300V"/>
 </part>
 <part name="ARX" library="FormE" deviceset="LED" device="CHIP-LED0805" value="ORANGE">
 <attribute name="PARTNO" value="598-8130-107F"/>
 </part>
 <part name="R39" library="rcl" deviceset="R-US_" device="R0603" value="330R">
-<attribute name="PARTNO" value="ERJ-3EKF24R0V"/>
+<attribute name="PARTNO" value="ERJ-3EKF3300V"/>
 </part>
 <part name="BTX" library="FormE" deviceset="LED" device="CHIP-LED0805" value="ORANGE">
 <attribute name="PARTNO" value="598-8130-107F"/>
 </part>
 <part name="R40" library="rcl" deviceset="R-US_" device="R0603" value="330R">
-<attribute name="PARTNO" value="ERJ-3EKF24R0V"/>
+<attribute name="PARTNO" value="ERJ-3EKF3300V"/>
 </part>
 <part name="BRX" library="FormE" deviceset="LED" device="CHIP-LED0805" value="ORANGE">
 <attribute name="PARTNO" value="598-8130-107F"/>
 </part>
 <part name="R41" library="rcl" deviceset="R-US_" device="R0603" value="330R">
-<attribute name="PARTNO" value="ERJ-3EKF24R0V"/>
+<attribute name="PARTNO" value="ERJ-3EKF3300V"/>
 </part>
 <part name="CTX" library="FormE" deviceset="LED" device="CHIP-LED0805" value="ORANGE">
 <attribute name="PARTNO" value="598-8130-107F"/>
 </part>
 <part name="R44" library="rcl" deviceset="R-US_" device="R0603" value="330R">
-<attribute name="PARTNO" value="ERJ-3EKF24R0V"/>
+<attribute name="PARTNO" value="ERJ-3EKF3300V"/>
 </part>
 <part name="CRX" library="FormE" deviceset="LED" device="CHIP-LED0805" value="ORANGE">
 <attribute name="PARTNO" value="598-8130-107F"/>
 </part>
 <part name="R45" library="rcl" deviceset="R-US_" device="R0603" value="330R">
-<attribute name="PARTNO" value="ERJ-3EKF24R0V"/>
+<attribute name="PARTNO" value="ERJ-3EKF3300V"/>
 </part>
 <part name="DTX" library="FormE" deviceset="LED" device="CHIP-LED0805" value="ORANGE">
 <attribute name="PARTNO" value="598-8130-107F"/>
 </part>
 <part name="R46" library="rcl" deviceset="R-US_" device="R0603" value="330R">
-<attribute name="PARTNO" value="ERJ-3EKF24R0V"/>
+<attribute name="PARTNO" value="ERJ-3EKF3300V"/>
 </part>
 <part name="DRX" library="FormE" deviceset="LED" device="CHIP-LED0805" value="ORANGE">
 <attribute name="PARTNO" value="598-8130-107F"/>
@@ -9871,7 +9871,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND88" library="supply1" deviceset="GND" device=""/>
 <part name="GND89" library="supply1" deviceset="GND" device=""/>
 <part name="R47" library="rcl" deviceset="R-US_" device="R0603" value="10k">
-<attribute name="PARTNO" value="ERJ-3EKF24R0V"/>
+<attribute name="PARTNO" value="ERJ-3EKF1002V"/>
 </part>
 <part name="VCC7" library="supply1" deviceset="VCCIO" device=""/>
 <part name="VCC8" library="supply1" deviceset="VCCIO" device=""/>
@@ -9893,7 +9893,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </part>
 <part name="GND71" library="supply1" deviceset="GND" device=""/>
 <part name="C43" library="rcl" deviceset="C-US" device="C0603K" value="0.1uF">
-<attribute name="PARTNO" value="GRM21BR71E104KA01L"/>
+<attribute name="PARTNO" value="GRM188R71E104KA01D"/>
 </part>
 <part name="U49" library="FormE" deviceset="TL7709A" device="-SOIC" value="TL7712A-SOIC">
 <attribute name="MF" value=""/>
@@ -9906,34 +9906,34 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="MF" value=""/>
 <attribute name="MPN" value="C2012X7R1H104K085AA"/>
 <attribute name="OC_NEWARK" value="04X3288"/>
-<attribute name="PARTNO" value="GRM21BR71E104KA01L"/>
+<attribute name="PARTNO" value="GRM188R71E104KA01D"/>
 </part>
 <part name="C74" library="rcl" deviceset="C-US" device="C0603K" value="0.1uF">
 <attribute name="MF" value=""/>
 <attribute name="MPN" value="C2012X7R1H104K085AA"/>
 <attribute name="OC_NEWARK" value="04X3288"/>
-<attribute name="PARTNO" value="GRM21BR71E104KA01L"/>
+<attribute name="PARTNO" value="GRM188R71E104KA01D"/>
 </part>
 <part name="C75" library="rcl" deviceset="C-US" device="C0603K" value="1uF">
-<attribute name="PARTNO" value="EMK212B7105KG-T"/>
+<attribute name="PARTNO" value="GRM188R71E104KA01D"/>
 </part>
 <part name="GND100" library="supply1" deviceset="GND" device=""/>
 <part name="TP26" library="testpad" deviceset="PTR1" device="TP20R"/>
 <part name="TP27" library="testpad" deviceset="PTR1" device="TP20R"/>
 <part name="TP28" library="testpad" deviceset="PTR1" device="TP20R"/>
 <part name="R61" library="rcl" deviceset="R-US_" device="R0603" value="10k">
-<attribute name="PARTNO" value="ERJ-6ENF1002V"/>
+<attribute name="PARTNO" value="ERJ-3EKF1002V"/>
 </part>
 <part name="GND97" library="supply1" deviceset="GND" device=""/>
 <part name="R63" library="rcl" deviceset="R-US_" device="R0603" value="100">
-<attribute name="PARTNO" value="ERJ-6ENF1000V"/>
+<attribute name="PARTNO" value="ERJ-3EKF1000V"/>
 </part>
 <part name="C76" library="rcl" deviceset="C-US" device="C0603K" value="1uF">
-<attribute name="PARTNO" value="EMK212B7105KG-T"/>
+<attribute name="PARTNO" value="GRM188R71E104KA01D"/>
 </part>
 <part name="GND98" library="supply1" deviceset="GND" device=""/>
 <part name="R65" library="rcl" deviceset="R-US_" device="R0603" value="10k">
-<attribute name="PARTNO" value="ERJ-6ENF1002V"/>
+<attribute name="PARTNO" value="ERJ-3EKF1002V"/>
 </part>
 <part name="S2" library="FormE" deviceset="TE-FSM4JSMATR" device="">
 <attribute name="PARTNO" value="FSM4JSMATR"/>
@@ -9948,7 +9948,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="PARTNO" value="598-8170-107F"/>
 </part>
 <part name="R36" library="rcl" deviceset="R-US_" device="R0603" value="1k">
-<attribute name="PARTNO" value="ERJ-6ENF1001V"/>
+<attribute name="PARTNO" value="ERJ-3EKF1001V"/>
 </part>
 <part name="GND56" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
@@ -9959,7 +9959,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <attribute name="PARTNO" value="GRM188R61A475KE15D"/>
 </part>
 <part name="C70" library="rcl" deviceset="C-US" device="C0603K" value="10uF">
-<attribute name="PARTNO" value="GRM21BR61E106KA73L"/>
+<attribute name="PARTNO" value="EMK107BBJ106MA-T"/>
 </part>
 <part name="GND57" library="supply1" deviceset="GND" device=""/>
 <part name="L5" library="FormE" deviceset="L0805" device="" value="2.2uH">
