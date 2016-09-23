@@ -1,0 +1,91 @@
+Partlist exported from C:/Users/Brandon/Documents/Formula Electric/Dummy_Bridge_Board_2017/Dummy Bridge Board.sch at 9/6/2016 3:42 PM
+
+Part  Value                Device             Package               Description                PARTNO               VALUE          
+ARX   ORANGE               LEDCHIP-LED0805    CHIP-LED0805          LED                        598-8130-107F                       
+ATX   ORANGE               LEDCHIP-LED0805    CHIP-LED0805          LED                        598-8130-107F                       
+B1    BKCT2228-2-ND        CT2228             BANANA_SOCKET_VERT    BANANA SOCKET VERT         CT2228-2                            
+B2    BKCT2228-0-ND        CT2228             BANANA_SOCKET_VERT    BANANA SOCKET VERT         CT2228-0                            
+BRX   ORANGE               LEDCHIP-LED0805    CHIP-LED0805          LED                        598-8130-107F                       
+BTX   ORANGE               LEDCHIP-LED0805    CHIP-LED0805          LED                        598-8130-107F                       
+C42   0.012uF              C-USC0603K         C0603K                CAPACITOR, American symbol GRM216R71H123KA01D                  
+C44   0.1uF                C-USC0603K         C0603K                CAPACITOR, American symbol GRM188R71E104KA01D                  
+C45   0.1uF                C-USC0603K         C0603K                CAPACITOR, American symbol GRM188R71E104KA01D                  
+C46   0.1uF                C-USC0603K         C0603K                CAPACITOR, American symbol GRM188R71E104KA01D                  
+C47   4.7uF                C-USC0603K         C0603K                CAPACITOR, American symbol GRM188R71E104KA01D                  
+C48   4.7uF                C-USC0603K         C0603K                CAPACITOR, American symbol GRM188R71E104KA01D                  
+C49   0.1uF                C-USC0603K         C0603K                CAPACITOR, American symbol GRM188R71E104KA01D                  
+C50   4.7uF                C-USC0603K         C0603K                CAPACITOR, American symbol GRM188R71E104KA01D                  
+C51   0.1uF                C-USC0603K         C0603K                CAPACITOR, American symbol GRM188R71E104KA01D                  
+C52   0.1uF                C-USC0603K         C0603K                CAPACITOR, American symbol GRM188R71E104KA01D                  
+C53   0.1uF                C-USC0603K         C0603K                CAPACITOR, American symbol GRM188R71E104KA01D                  
+C54   0.1uF                C-USC0603K         C0603K                CAPACITOR, American symbol GRM188R71E104KA01D                  
+C55   0.1uF                C-USC0603K         C0603K                CAPACITOR, American symbol GRM188R71E104KA01D                  
+C56   0.1uF                C-USC0603K         C0603K                CAPACITOR, American symbol GRM188R71E104KA01D                  
+C57   0.1uF                C-USC0603K         C0603K                CAPACITOR, American symbol GRM188R71E104KA01D                  
+C58   0.1uF                C-USC0603K         C0603K                CAPACITOR, American symbol GRM188R71E104KA01D                  
+C59   0.1uF                C-USC0603K         C0603K                CAPACITOR, American symbol GRM188R71E104KA01D                  
+C60   18pF                 C-USC0603K         C0603K                CAPACITOR, American symbol GRM188R71E104KA01D                  
+C61   18pF                 C-USC0603K         C0603K                CAPACITOR, American symbol GRM188R71E104KA01D                  
+C62   0.1uF                C-USC0603K         C0603K                CAPACITOR, American symbol GRM188R71E104KA01D                  
+C63   4.7uF                C-USC0603K         C0603K                CAPACITOR, American symbol GRM188R71E104KA01D                  
+C64   0.1uF                C-USC0603K         C0603K                CAPACITOR, American symbol GRM188R71E104KA01D                  
+C65   4.7uF                C-USC0603K         C0603K                CAPACITOR, American symbol GRM188R71E104KA01D                  
+C66   0.1uF                C-USC0603K         C0603K                CAPACITOR, American symbol GRM188R71E104KA01D                  
+C67   0.1uF                C-USC0603K         C0603K                CAPACITOR, American symbol GRM188R71E104KA01D                  
+C68   1uF                  C-USC0603K         C0603K                CAPACITOR, American symbol GRM188R71E104KA01D                  
+C69   1uF                  C-USC0603K         C0603K                CAPACITOR, American symbol GRM188R71E104KA01D                  
+C85   9pF                  C-USC0603K         C0603K                CAPACITOR, American symbol CL21C090CBANNNC                     
+C86   0.1uF                C-USC0603K         C0603K                CAPACITOR, American symbol GRM21BR71E104KA01L                  
+C87   4.7uF 50v            C-USC1206          C1206                 CAPACITOR, American symbol GRM31CR71H475KA12L                  
+C88   4.7uF 50v            C-USC1206          C1206                 CAPACITOR, American symbol GRM31CR71H475KA12L                  
+C89   47uF                 C-USC1206          C1206                 CAPACITOR, American symbol GRM31CR61A476ME15L                  
+C90   10uF                 C-USC0603K         C0603K                CAPACITOR, American symbol GRM21BR61E106KA73L                  
+C91   10uF                 C-USC0603K         C0603K                CAPACITOR, American symbol GRM21BR61E106KA73L                  
+CRX   ORANGE               LEDCHIP-LED0805    CHIP-LED0805          LED                        598-8130-107F                       
+CTX   ORANGE               LEDCHIP-LED0805    CHIP-LED0805          LED                        598-8130-107F                       
+D5    PMEG3030EP,115       PMEG3030EP,115     SOD-128                                          PMEG3030EP,115       PMEG3030EP,115 
+D21   50WQ10FNPBF          VISHAY-50WQ10FNPBF DPAK                                             VS-50WQ10FNPBF       50WQ10FNPBF    
+DRX   ORANGE               LEDCHIP-LED0805    CHIP-LED0805          LED                        598-8130-107F                       
+DTX   ORANGE               LEDCHIP-LED0805    CHIP-LED0805          LED                        598-8130-107F                       
+H2    CARCONTROLLER-REF    CARCONTROLLER-REF  CARCONTROLLER-REF                                                                    
+H4    CCBUS-STACK          CCBUS-STACK        SAMTEC-TFM-125-XX-X-D                                                                
+J2    5787834-1            TE-USB-B-5787834-1 TE-5787834-1                                     5787834-1            5787834-1      
+L2    600R @ 100M          INDUCTOR           0805                                             BLM21PG221SN1D                      
+L3    600R @ 100M          INDUCTOR           0805                                             BLM21PG221SN1D                      
+L4    600R @ 100M          INDUCTOR           0805                                             BLM21PG221SN1D                      
+L7    10uH                 WURTH-744325XXXX   WURTH-744325XXXX                                 7443251000                          
+LED12 GREEN                LEDCHIP-LED0805    CHIP-LED0805          LED                        598-8170-107F                       
+R7    1k                   R-US_R0603         R0603                 RESISTOR, American symbol  ERJ-6ENF1001V                       
+R33   24R                  R-US_R0603         R0603                 RESISTOR, American symbol  ERJ-3EKF24R0V                       
+R34   24R                  R-US_R0603         R0603                 RESISTOR, American symbol  ERJ-3EKF24R0V                       
+R35   12k                  R-US_R0603         R0603                 RESISTOR, American symbol  ERJ-3EKF24R0V                       
+R37   330R                 R-US_R0603         R0603                 RESISTOR, American symbol  ERJ-3EKF24R0V                       
+R38   330R                 R-US_R0603         R0603                 RESISTOR, American symbol  ERJ-3EKF24R0V                       
+R39   330R                 R-US_R0603         R0603                 RESISTOR, American symbol  ERJ-3EKF24R0V                       
+R40   330R                 R-US_R0603         R0603                 RESISTOR, American symbol  ERJ-3EKF24R0V                       
+R41   330R                 R-US_R0603         R0603                 RESISTOR, American symbol  ERJ-3EKF24R0V                       
+R42   162k                 R-US_R0603         R0603                 RESISTOR, American symbol  ERJ-6ENF1623V                       
+R44   330R                 R-US_R0603         R0603                 RESISTOR, American symbol  ERJ-3EKF24R0V                       
+R45   330R                 R-US_R0603         R0603                 RESISTOR, American symbol  ERJ-3EKF24R0V                       
+R46   330R                 R-US_R0603         R0603                 RESISTOR, American symbol  ERJ-3EKF24R0V                       
+R47   10k                  R-US_R0603         R0603                 RESISTOR, American symbol  ERJ-3EKF24R0V                       
+R48   1k                   R-US_R0603         R0603                 RESISTOR, American symbol  ERJ-3EKF1001V                       
+R49   15k                  R-US_R0603         R0603                 RESISTOR, American symbol  ERJ-6ENF1502V                       
+R54   1k                   R-US_R0603         R0603                 RESISTOR, American symbol  ERJ-3EKF1001V                       
+R55   1k                   R-US_R0603         R0603                 RESISTOR, American symbol  ERJ-3EKF1001V                       
+R56   1k                   R-US_R0603         R0603                 RESISTOR, American symbol  ERJ-3EKF1001V                       
+R57   1k                   R-US_R0603         R0603                 RESISTOR, American symbol  ERJ-3EKF1001V                       
+R58   1k                   R-US_R0603         R0603                 RESISTOR, American symbol  ERJ-3EKF1001V                       
+R59   1k                   R-US_R0603         R0603                 RESISTOR, American symbol  ERJ-3EKF1001V                       
+R60   1k                   R-US_R0603         R0603                 RESISTOR, American symbol  ERJ-3EKF1001V                       
+R62   60.4k                R-US_R0603         R0603                 RESISTOR, American symbol  ERJ-6ENF6042V                       
+R68   11.5k                R-US_R0603         R0603                 RESISTOR, American symbol  ERJ-6ENF1152V                       
+R72   DNP                  R-US_R0603         R0603                 RESISTOR, American symbol  *                                   
+R73   DNP                  R-US_R0603         R0603                 RESISTOR, American symbol  *                                   
+U9    TPS54540DDARQ1       TPS54540           TPS54540                                         TPS54540DDAR         TPS54540DDARQ1 
+U14   ADUM3160BRWZ-RL      ADUM3160           ADUM3160                                         ADUM3160BRWZ-RL      ADUM3160BRWZ-RL
+U22   PDS1-S5-S5-M-TR      PDS1-M             PDS1-M                                           PDS1-S5-S5-M-TR                     
+U28   FT4232HL             FT4232HL           PQFP-64                                          FT4232HL-REEL        FT4232HL       
+U29   SN74HC595DR          SN74HC595D         SOIC-16                                          SN74HC595DR          SN74HC595DR    
+U30   LP5907MFX-3.3/NOPB   LP5907MFX          SOT23-5                                          LP5907MFX-3.3/NOPB                  
+Y2    CX3225GB12000P0HPQCC CX3225GB           CX3225GB                                         CX3225GB12000P0HPQCC                
